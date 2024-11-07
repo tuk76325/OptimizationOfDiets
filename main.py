@@ -4,14 +4,6 @@ from collections import defaultdict
 import pandas as pd
 from six import binary_type
 
-#from offics hours:
-# need names of food and list of nutriends of food
-# i = food, j = jth nutrient for food
-# need cost per food as well
-# and max & min
-# constraint:
-
-
 df = pd.read_excel("diet.xls", header = 0) # read all data
 
 minReqs1 = df.loc[65].dropna().to_dict()
